@@ -1,267 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta author="王福强" />
-  <meta keywords="福强进学堂,教育, education, 王福强,fujohnwang" />
-  <meta description="福强进学堂 - edu.afoo.me" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="王福强" />
+  <meta name="keywords" content="福强进学堂,教育, education, 王福强,fujohnwang" />
+  <meta name="description" content="福强进学堂 - edu.afoo.me" />
   <title>福强进学堂 - edu.afoo.me</title>
+  <link href="./css/style.css" rel="stylesheet" />
   <style>
-    ::-webkit-scrollbar {
-      width: 11px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background-color: #3F83F8;
-      border-radius: 3px;
-    }
-
     html {
       scroll-behavior: smooth;
     }
-
-    .f-colorful,
-    h1,
-    h2 {
-      background-image: linear-gradient(45deg, #e44219, #005ff3);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
   </style>
-  <link href="./css/style.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="bg-gray-900 text-gray-300 font-sans">
 
-  <header class="bg-cyan-50 shadow-sm">
-    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-      <div class="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
-        <div>
-          <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">欢迎来到福强进学堂</h1>
-  
-          <p class="mt-1.5 text-sm text-gray-500">如果您是支付成功后跳转到当前页面，请选择下方相应的产品链接 或者 <a href="https://afoo.me" class="border-b">福强的产品首页链接</a> 并点击前往</p> 
-          <p class="mt-1.5 text-sm text-gray-500">也可以在付款成功后查收邮件, 以了解进一步的访问指引</p>
+  <!-- Main Container -->
+  <div class="container mx-auto max-w-5xl px-4 py-8 md:py-16">
+
+    <!-- Header Section -->
+    <header class="relative text-center mb-12 md:mb-16">
+      <img src="./images/grow_with_fq.webp" alt="福强与你共同成长" class="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg border-4 border-gray-700">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">福强进学堂</h1>
+      <p class="text-lg text-cyan-400">Be a full lifetime learner and invest in yourself.</p>
+
+      <!-- Notification Bubble -->
+      <div class="relative mt-6 max-w-2xl mx-auto md:absolute md:top-0 md:right-0 md:max-w-xs md:mx-0 md:mt-0 bg-gray-800 border border-cyan-700 rounded-lg p-4 flex items-start space-x-3 shadow-lg z-10">
+        <div class="flex-shrink-0">
+          <svg class="w-5 h-5 text-cyan-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+          </svg>
         </div>
-  
-        <div class="flex items-center gap-4">
-          <button class="inline-flex items-center justify-center gap-1.5 rounded border border-gray-200 bg-white px-5 py-3 text-gray-900 transition hover:text-gray-700 focus:outline-none focus:ring" type="button">
-            <span class="text-sm font-medium"> <a href="https://afoo.me">访问福强与其产品首页</a> </span>
-  
-            <svg xmlns="http://www.w3.org/2000/svg" class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </button>
+        <div class="flex-grow text-sm">
+          <p class="text-gray-300">如果您是支付成功后跳转到当前页面，请选择下方想要访问的相应产品直接访问。也可以在付款成功后查收邮件，以了解进一步的访问指引。</p>
         </div>
       </div>
-    </div>
-  </header>
-  
-  <section class="body-font text-gray-600">
-    <div class="container mx-auto px-5 py-24">
-      <div class="mx-3 my-12 grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
-        <div class="p-6">
-          <a href="https://kb.afoo.me" class="group relative block">
-            <img alt="" src="https://afoo.me/hero3/89.webp" class="absolute left-1/2 top-1/2 h-full -translate-x-1/2 -translate-y-1/2 transform opacity-75 transition-opacity group-hover:opacity-50" />
-      
-            <div class="relative p-4 sm:p-6 lg:p-8">
-              <p class="text-sm font-medium uppercase tracking-widest text-pink-500">Product</p>
-      
-              <p class="text-xl font-bold text-red-600 sm:text-6xl">福强私学</p>
-      
-              <div class="mt-32 sm:mt-48 lg:mt-64">
-                <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                  <p class="text-sm text-black">福强文库/知识库，用文字传承经典，与你一起探索技术、商业与人，帮你提前了解镜子的另一面</p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="p-6">
-          <a href="https://fb.afoo.me" class="group relative block">
-            <img alt="" src="https://afoo.me/hero3/85.webp" class="absolute left-1/2 top-1/2 h-full -translate-x-1/2 -translate-y-1/2 transform opacity-75 transition-opacity group-hover:opacity-50" />
-      
-            <div class="relative p-4 sm:p-6 lg:p-8">
-              <p class="text-sm font-medium uppercase tracking-widest text-pink-500">Product</p>
-      
-              <p class="text-xl font-bold text-red-600 sm:text-6xl">福报</p>
-      
-              <div class="mt-32 sm:mt-48 lg:mt-64">
-                <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                  <p class="text-sm text-black">开天窗，拉认知，高维度、结构化剖析与洞察。 面向资深高管、CIO/CTO、创业者的一系列内容。</p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="p-6">
-          <a href="https://c.afoo.me" class="group relative block">
-            <img alt="" src="https://afoo.me/hero3/169.webp" class="absolute left-1/2 top-1/2 h-full -translate-x-1/2 -translate-y-1/2 transform opacity-75 transition-opacity group-hover:opacity-50" />
-      
-            <div class="relative p-4 sm:p-6 lg:p-8">
-              <p class="text-sm font-medium uppercase tracking-widest text-pink-500">Service</p>
-      
-              <p class="text-xl font-bold text-red-600 sm:text-6xl">福强咨询</p>
-      
-              <div class="mt-32 sm:mt-48 lg:mt-64">
-                <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                  <p class="text-sm text-black">自学费脑细胞、费钱还觉得浪费时间？ 选择对谈，用我的时间帮你省时间，至于钱嘛，总是要费的。线下培训与workshop？也不是不行。</p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      
-    </div>
-  </section>
+    </header>
 
-  
-  <section class="bg-white">
-    <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-      <h2 class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">更多福强产品与服务</h2>
-  
-      <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-        <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-          <div class="flex items-center gap-4">
-            <img alt="" src="https://afoo.me/icons/cosk1.gif" class="size-14 object-cover" />
-  
+    <!-- Cards Section -->
+    <main>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Card 1: 福强私学 -->
+        <a href="https://kb.afoo.me" class="card-link-wrapper">
+          <div class="bg-gray-800 rounded-lg shadow-lg p-6 h-full flex flex-col justify-between hover:bg-gray-700 transition-colors duration-300 transform hover:-translate-y-1">
             <div>
-              <div class="flex justify-center gap-0.5 text-green-500">
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              </div>
-  
-              <p class="mt-0.5 text-lg font-medium text-gray-900"><a href="https://afoo.me/arch.html" class="border-b">「架构师的修炼」大礼包</a></p>
+              <h2 class="text-2xl font-bold text-white mb-2">福强私学</h2>
+              <p class="text-gray-400">福强文库/知识库，用文字传承经典，与你一起探索技术、商业与人，帮你提前了解镜子的另一面。</p>
             </div>
+            <span class="mt-4 text-cyan-500 font-semibold">前往学习 →</span>
           </div>
-  
-          <p class="mt-4 text-gray-700">包括但不限于「架构思维」、「架构思维思考过去现在与未来」、「微服务深度揭秘」、「微服务架构设计模式」、「企业服务化治理」、「LoD Explained」等一系列内容。</p>
-        </blockquote>
-  
-        <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-          <div class="flex items-center gap-4">
-            <img alt="" src="https://afoo.me/icons/cosk2.gif" class="size-14 object-cover" />
+        </a>
+
+        <!-- Card 2: 福报 -->
+        <a href="https://fb.afoo.me" class="card-link-wrapper">
+          <div class="bg-gray-800 rounded-lg shadow-lg p-6 h-full flex flex-col justify-between hover:bg-gray-700 transition-colors duration-300 transform hover:-translate-y-1">
             <div>
-              <div class="flex justify-center gap-0.5 text-green-500">
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              </div>
-  
-              <p class="mt-0.5 text-lg font-medium text-gray-900"><a href="https://afoo.me/mgmt.html" class="border-b">管理者入门与进阶课程</a></p>
+              <h2 class="text-2xl font-bold text-white mb-2">福报</h2>
+              <p class="text-gray-400">开天窗，拉认知，高维度、结构化剖析与洞察。面向资深高管、CIO/CTO、创业者的一系列内容。</p>
             </div>
+            <span class="mt-4 text-cyan-500 font-semibold">前往学习 →</span>
           </div>
-  
-          <p class="mt-4 text-gray-700">包含「极简管理课」电子书、「QCon+案例研习社之福强谈管理」以及「组织逻辑」等内容。</p>
-        </blockquote>
-  
-        <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-          <div class="flex items-center gap-4">
-            <img alt="" src="https://afoo.me/icons/cosk6.gif" class="size-14 object-cover" />
-  
+        </a>
+
+        <!-- Card 3: 福强咨询 -->
+        <a href="https://c.afoo.me" class="card-link-wrapper">
+          <div class="bg-gray-800 rounded-lg shadow-lg p-6 h-full flex flex-col justify-between hover:bg-gray-700 transition-colors duration-300 transform hover:-translate-y-1">
             <div>
-              <div class="flex justify-center gap-0.5 text-green-500">
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              </div>
-  
-              <p class="mt-0.5 text-lg font-medium text-gray-900"><a href="https://afoo.me/jiangshu.html" class="border-b">福强讲书</a></p>
+              <h2 class="text-2xl font-bold text-white mb-2">福强咨询</h2>
+              <p class="text-gray-400">自学费脑细胞、费钱还觉得浪费时间？选择对谈，用我的时间帮你省时间。</p>
             </div>
+            <span class="mt-4 text-cyan-500 font-semibold">了解详情 →</span>
           </div>
-  
-          <p class="mt-4 text-gray-700">讲书的价值，不但可以帮你推荐好书，更在于附加了福强老师的认知与解读。</p>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-  
+        </a>
 
-  <!-- <div class="mx-auto w-1/2 p-3 my-6"> -->
-    <!-- <img class="mx-auto" src="/images/grow_with_fq.webp" alt /> -->
-    <!-- <p class="text-center text-3xl md:text-5l mt-3 font-bold f-colorful">领先半步，步步为赢</p> -->
-    <!-- <img class="mx-auto" src="/images/fk-fb-fw.webp" alt /> -->
-  <!-- </div> -->
-
-  <section>
-    <div class="bg-contain bg-center bg-no-repeat" style="background-image: url('https://afoo.me/images/goat.svg');">
-      <!-- Container -->
-      <div class="mx-auto w-full max-w-7xl px-5 py-12 md:px-10">
-        <!-- Component -->
-        <div class="flex min-h-screen flex-col justify-center mx-auto w-full max-w-3xl py-12  gap-10">
-          <!-- Title -->
-          <div class="flex flex-col items-center gap-y-5">
-            <h1 class="text-center text-4xl md:text-8xl font-bold"><span><a href="https://afoo.me">福强</a></span>进学堂</h1>
-            <p class="text-center max-w-lg text-2xl">Be a full lifetime learner and invest yourself.</p>
+        <!-- Card 4: 架构师的修炼 -->
+        <a href="https://afoo.me/arch.html" class="card-link-wrapper">
+          <div class="bg-gray-800 rounded-lg shadow-lg p-6 h-full flex flex-col justify-between hover:bg-gray-700 transition-colors duration-300 transform hover:-translate-y-1">
+            <div>
+              <h2 class="text-2xl font-bold text-white mb-2">「架构师的修炼」大礼包</h2>
+              <p class="text-gray-400">包括「架构思维」、「微服务深度揭秘」、「企业服务化治理」等一系列内容。</p>
+            </div>
+            <span class="mt-4 text-cyan-500 font-semibold">前往学习 →</span>
           </div>
-        </div>
-      </div>
-  </section>
+        </a>
 
-  <footer class="block">
-    <div class="py-16 lg:py-32 mx-auto w-full max-w-7xl px-5 md:px-10">
-      <div class="mb-14 w-full [border-bottom:1.7px_solid_rgb(0,_0,_0)] mt-16">
-      </div>
-      <div
-        class="flex-row flex justify-between max-[991px]:items-center max-[767px]:flex-col max-[767px]:items-start max-[479px]:flex-col-reverse">
-        <div class="font-semibold max-[991px]: max-[479px]:mb-4 max-[991px]:py-1 text-center sm:text-center">
-          <a href="https://twitter.com/afoo_me"
-            class="inline-block font-normal text-[#636262] transition hover:text-[#d6a701] sm:pr-6 lg:pr-12 py-1.5 sm:py-2 pr-6">Twitter/X</a>
-          <a href="https://github.com/fujohnwang"
-            class="inline-block font-normal text-[#636262] transition hover:text-[#d6a701] sm:pr-6 lg:pr-12 py-1.5 sm:py-2 pr-6">Github</a>
-          <a href="https://www.youtube.com/@afoo"
-            class="inline-block font-normal text-[#636262] transition hover:text-[#d6a701] sm:pr-6 lg:pr-12 py-1.5 sm:py-2 pr-6">Youtube</a>
-        </div>
-        <div class="max-[991px]:flex-none">
-          <p class="text-[#636262] max-[479px]:text-sm">© Copyright Since 2024. All rights reserved.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+        <!-- Card 5: 管理者入门与进阶 -->
+        <a href="https://afoo.me/mgmt.html" class="card-link-wrapper">
+          <div class="bg-gray-800 rounded-lg shadow-lg p-6 h-full flex flex-col justify-between hover:bg-gray-700 transition-colors duration-300 transform hover:-translate-y-1">
+            <div>
+              <h2 class="text-2xl font-bold text-white mb-2">管理者入门与进阶</h2>
+              <p class="text-gray-400">包含「极简管理课」电子书、「QCon+案例研习社之福强谈管理」以及「组织逻辑」等内容。</p>
+            </div>
+            <span class="mt-4 text-cyan-500 font-semibold">前往学习 →</span>
+          </div>
+        </a>
 
-  <script>
+        <!-- Card 6: 福强讲书 -->
+        <a href="https://afoo.me/jiangshu.html" class="card-link-wrapper">
+          <div class="bg-gray-800 rounded-lg shadow-lg p-6 h-full flex flex-col justify-between hover:bg-gray-700 transition-colors duration-300 transform hover:-translate-y-1">
+            <div>
+              <h2 class="text-2xl font-bold text-white mb-2">福强讲书</h2>
+              <p class="text-gray-400">讲书的价值，不但可以帮你推荐好书，更在于附加了福强老师的认知与解读。</p>
+            </div>
+            <span class="mt-4 text-cyan-500 font-semibold">前往学习 →</span>
+          </div>
+        </a>
 
-  </script>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center mt-12 md:mt-16 pt-8 border-t border-gray-800">
+      <div class="flex justify-center gap-6 mb-4">
+        <a href="https://twitter.com/afoo_me" class="text-gray-400 hover:text-white transition-colors">Twitter/X</a>
+        <a href="https://github.com/fujohnwang" class="text-gray-400 hover:text-white transition-colors">Github</a>
+        <a href="https://www.youtube.com/@afoo" class="text-gray-400 hover:text-white transition-colors">Youtube</a>
+        <a href="https://afoo.me" class="text-gray-400 hover:text-white transition-colors">afoo.me</a>
+      </div>
+      <p class="text-gray-500 text-sm">© Copyright Since 2024. All rights reserved.</p>
+    </footer>
+
+  </div>
 
 </body>
 
